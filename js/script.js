@@ -75,18 +75,18 @@ var context = chess.getContext('2d');
 
 context.strokeStyle='#4e4747';
 
-//var logo = new Image();
+var logo = new Image();
 
-//logo.src='./image/logo.png';
-//logo.onload=function(){
+logo.src='./image/logo.png';
+logo.onload=function(){
 
-	//context.drawImage(logo,0,0,450,450);
-	//drawChessBoard();
+	context.drawImage(logo,0,0,450,450);
+	drawChessBoard();
 	
-//}
+}
 
 
-//var drawChessBoard=function(){
+var drawChessBoard=function(){
 
 for(i=0;i<15;i++){
 	context.moveTo(15+i*30,15);
@@ -95,7 +95,7 @@ for(i=0;i<15;i++){
     context.lineTo(435,15+i*30);
 }
 context.stroke();	
-//}
+}
 
 
 var oneStep=function(i,j,me){
